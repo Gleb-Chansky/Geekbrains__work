@@ -25,10 +25,14 @@
         background-color: $black;
         border: none;
         position: absolute;
-        width: 1150px;
+        width: 1500px;
         height: 50px;
         top: -2px;
         left: -1px;
+    }
+
+    &__search:hover {
+        outline: none;
     }
     
     &__form {
@@ -38,7 +42,6 @@
     &__nav-group {
         display: flex;
         align-items: center;
-        position: relative;
     }
     
     &__menu {
@@ -52,7 +55,7 @@
     &__button {
         fill: white;
         background-color: transparent;
-        border: 0;
+        border: none;
     }
     
     &__search-button:active + .header__form {
