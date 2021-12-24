@@ -1,0 +1,47 @@
+body {
+    font-family: 'Lato';
+    font-weight: 400;
+    font-style: normal;
+    font-size: 14px;
+    line-height: 17px;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    padding: 0;
+    overflow: hidden;
+    border: 0;
+    clip: rect(0 0 0 0)
+}
+
+button:hover {
+    cursor: pointer;
+}
+
+button:focus {
+    opacity: 0.3;
+}
+
+button:active {
+    opacity: 0.5;
+}
+
+input:focus {
+    background-color: #d6c5c5;
+}
+
+input:hover {
+    outline: 1px solid;
+}
+
+.container {
+    width:1140px;
+    margin:0 auto;
+}
+
+.pink-text {
+    color: $pink-text;
+}
