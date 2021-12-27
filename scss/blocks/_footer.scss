@@ -57,6 +57,14 @@
         @include font(24px, 40px, 700);
         color: #222224;
         text-align: center;
+
+        @include tablet {
+            @include font(18px, 29px);
+        }
+
+        @include mobile {
+            @include font(18px, 29px) ;
+        }
     }
     
     &__top-text {
@@ -64,6 +72,14 @@
         @include font(18px, 30px);
         color: #222224;
         text-align: center;
+
+        @include tablet {
+            @include font(18px, 27px);
+        }
+
+        @include mobile {
+            @include font(14px, 21px);
+        }
     }
     
     &__top-input {
