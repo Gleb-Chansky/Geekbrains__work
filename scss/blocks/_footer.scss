@@ -1,11 +1,17 @@
 .footer {
     min-height: 448px;
     background-image: url('../img/footerbackground.png');
+    background-size: cover;
 
    &__top {
         min-height: 448px;
         display: flex;
         justify-content: space-around;
+
+        @include tablet{
+            flex-direction: column;
+            align-items: center;
+        }
     }
     
     &__top-founder {
@@ -13,6 +19,14 @@
         display: flex;
         flex-direction: column;
         align-items: center;
+
+        @include tablet {
+            margin: 53px 0 0 0;
+        }
+
+        @include mobile {
+            margin: 53px 0 0 0;
+        }
     }
     
     &__top-img {
@@ -27,6 +41,14 @@
     
     &__top-subscription {
         margin: 150px 0 0 0;
+
+        @include tablet{
+            margin: 48px 0 140px 0;
+        }
+
+        @include mobile{
+            margin: 59px 0 110px 0;
+        }
     }
     
     &__top-title {
@@ -100,15 +122,28 @@
         display: flex;
         justify-content: space-between;
         align-items: center;
+
+        @include mobile{
+            flex-direction: column-reverse;
+            align-items: center;
+        }
     }
     
     &__bottom-list {
         display: flex;
+
+        @include mobile{
+            margin: 43px 0 40px 0;
+        }
     }
     
     &__bottom-copy {
         @include font(16px, 19px);
-        color: #FBFBFB;
+        color: #fbfbfb;
+
+        @include mobile{
+            margin: 0 0 9px 0;
+        }
     }
     
     &__bottom-link { 

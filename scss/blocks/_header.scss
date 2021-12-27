@@ -12,7 +12,7 @@
         margin: 0 41px 0 0;
     }
     
-    &__menu-group {
+    &__nav-group {
         @include flex-center;
         position: relative;
     }
@@ -25,10 +25,18 @@
         background-color: $black;
         border: none;
         position: absolute;
-        width: 1500px;
+        max-width: 1600px;
         height: 50px;
         top: -2px;
         left: -1px;
+
+        @include tablet{
+            width: 1599px;
+        }
+
+        @include mobile{
+            width: 767px;
+        }
     }
 
     &__search:hover {
@@ -39,9 +47,16 @@
         display: none;
     }
     
-    &__nav-group {
+    &__menu-group {
         display: flex;
         align-items: center;
+    }
+
+    &__menu-wrp{
+        @include flex-center;
+        @include mobile{
+            display: none;
+        }
     }
     
     &__menu {
@@ -87,5 +102,15 @@
     &__menu {
         display:none;
     }
-    
+
+    &__link-padding {
+    @include tablet {
+        padding-left: 20px;
+    }
+    @include mobile {
+        padding-left: 20px;
+    }
+    }
+
+
 }

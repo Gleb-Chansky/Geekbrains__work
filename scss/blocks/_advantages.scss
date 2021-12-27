@@ -2,11 +2,23 @@
     background-color: $black;
     min-height: 341px;
 
+    @include tablet{
+        padding: 48px 0 64px 0;
+    }
+
+    @include mobile{
+        padding: 48px 0 81px 0;
+    }
+
     &__list {
         min-height: 341px;
         display: flex;
         justify-content: space-around;
         align-items: center;
+
+        @include tablet{
+            flex-direction: column;
+        }
     }
     
     &__item {
