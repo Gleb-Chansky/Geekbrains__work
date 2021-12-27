@@ -5,78 +5,180 @@
         color: #f16d7f;
         padding: 60px 0 60px 0;
         background-color:#f8f3f4;
+
+        @include mobile {
+            text-align: center;
+        }
     }
     
     &__wrp {
         margin: 96px 0 0 0;
         display: flex;
         justify-content: space-between;
+
+        @include tablet {
+            flex-direction: column;
+            margin: 59px 0 0 0;
+        }
+    }
+
+    &__list {
+        
+        @include tablet {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-width: 100%;
+        }
+
     }
     
     &__item {
         position: relative;
         display: flex;
         height: 306px;
-        width: 652px;
-        margin: 0 129px 40px 0;
+        width: 100%;
+        margin: 0 0 40px 0;
         -webkit-box-shadow: 20px 20px 16px 2px rgba(34, 60, 80, 0.2);
         -moz-box-shadow: 20px 20px 16px 2px rgba(34, 60, 80, 0.2);
         box-shadow: 20px 20px 16px 2px rgba(34, 60, 80, 0.2);
+
+        @include tablet {
+            width: 734px;
+        }
+
+        @include mobile {
+            width: 360px;
+            height: 188px;
+        }
     }
     
     &__item-img {
         margin-right: 32px;
+
+        @include mobile {
+            width: 143px;
+            height: 188px;
+            margin-right: 17px;
+        }
     }
     
     &__item-title {
         @include uppercase;
         @include font(24px, 29px);
         color: $black;
-        margin: 22px 0 42px;
+        margin: 22px 0 42px 0;
+
+        @include mobile{
+            @include font(16px, 19px);
+            margin: 13px 0 25px 0;
+        }
     }
     
     &__sub-item-text {
         @include font(22px, 26px);
         color: #575757;
         margin-bottom: 6px;
+
+        @include mobile{
+            @include font(14px, 16px);
+            margin-bottom: 3px;
+        }
     }
     
-    &__button {
+    &__item-button {
         position: absolute;
         border: none;
         fill: #575757;
         right: 22px;
         top: 28px;
+
+        @include mobile{
+            display: none;
+        }
+    }
+
+    &__item-button-small {
+        position: absolute;
+        border: none;
+        fill: #575757;
+        right: 12px;
+        top: 17px;
+        display: none;
+
+        @include mobile{
+            display: block;
+        }
     }
     
     &__button:hover {
        opacity: 0.8;
     }
     
-    &__button-wrp {
+    &__list-button-wrp {
         max-width: 652px;
         display: flex;
         justify-content: space-between;
-        margin-top: 72px;
-        margin-bottom: 128px;
+        margin: 72px 0 128px 0;
+
+        @include tablet {
+            margin: 62px 0 64px 0;
+            width: 734px;
+        }
+
+        @include mobile {
+            width: 357px;
+            margin: 30px 0 48px 0;
+        }
     }
     
-    &__wrp-button {
+    &__list-button {
         @include uppercase;
         font-weight: 300;
         background-color: white;
-        color:#000000;
+        color: #575757;
         border: 1px solid #a4a4a4;
-        padding: 16px 40px;
+        width: 235px;
+        height: 50px;
+
+        @include mobile{
+            @include font(12px, 14px, 400);
+            text-transform: none;
+            width: 175px;
+            height: 33px;
+        }
     }
     
-    &__wrp-button:hover {
-        opacity: 0.8;
+    &__wrapper{
+        margin: 17px 0 0 0;
+
+        @include tablet {
+            display: flex;
+            justify-content: center;
+            margin: 0 0 128px 0;
+        }
+
+        @include mobile {
+            flex-direction: column;
+            align-items: center;
+            margin: 0 0 96px 0;
+        }
     }
-    
+
     &__adress {
         margin:0 0 57px 0;
+        max-width: 360px;
+
+        @include tablet {
+            margin: 0 15px 0 0;
+            max-width: 300px;
+        }
+
+        @include mobile {
+            max-width: 100%;
+        }
     }
+
     &__adress-title {
         @include uppercase;
         @include font(16px,19px,300);
@@ -89,7 +191,6 @@
         min-height: 44px;
         width: 100%;
         margin: 0 0 20px 0;
-        flex-grow: 1;
     }
     
     &__adress-button {
@@ -97,46 +198,60 @@
         @include font(11px, 13px,300);
         color: #4a4a4a;
         padding: 10px 14px;
-        border: 1px solid #A4A4A4;
+        border: 1px solid #a4a4a4;
     }
     
-    &__prise {
+    &__price {
         background-color: #f5f3f3;
         text-align: right;
         display: flex;
         flex-direction: column;
         justify-content: center;
+        height: 214px;
+
+        @include tablet {
+            margin: 40px 0 0 0;
+        }
+
+        @include mobile {
+            margin: 48px 0 0 0;
+        }
     }
     
-    &__prise-sub-title {
+    &__price-sub-title {
         @include uppercase;
         @include font(11px,13px);
         color:#4a4a4a;
-        margin: 39px 34px 12px 0;
+        margin: 39px 34px 0 0;
     }
     
-    &__prise-title {
+    &__price-title {
         @include uppercase;
         @include font(16px, 19px, 300);
         text-transform: uppercase;
-        margin: 0 37px 0 0;
+        margin: 12px 37px 39px 0;
+    }
+
+    &__price-hr {
+        color: #e2e2e2;
     }
     
     &__price-wrp-button {
         text-align: center;
+        white-space: nowrap;
     }
     
-    &__prise-button {
+    &__price-button {
         @include font (16px, 19px, 300);
         @include uppercase;
-        padding: 15px 42px;
+        padding: 16px 24px;
         background-color: #f16d7f;
         color: white;
         border: none;
-        margin: 54px 0 0 0;
+        margin: 0 43px 42px 44px;
     }
     
-    &__prise-button:hover {
+    &__price-button:hover {
         background-color: white;
         color: #f16d7f;
         border: 1px solid #f16d7f;
