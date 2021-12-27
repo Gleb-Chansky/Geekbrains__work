@@ -3,6 +3,7 @@
         display: flex;
         justify-content: space-between;
         flex-wrap: wrap;
+        white-space: nowrap;
 
         @include mobile {
             flex-wrap: nowrap;
@@ -19,7 +20,7 @@
     
     &__item_woman {
       background-image: url('../img/salewoman.png');
-      margin: 0 30px 30px 0;
+      margin: 0 0 30px 0;
 
       @include tablet {
         width: 232px;
@@ -39,7 +40,7 @@
     
     &__item_man {
         background-image: url('../img/saleman.png');
-        margin:0 30px 30px 0;
+        margin:0 0 30px 0;
 
         @include tablet {
             width: 232px;
