@@ -293,14 +293,12 @@ table {
     margin: 59px 0 0 0;
   }
 }
-.cart__list {
-  min-width: 100%;
-}
 @media (max-width: 1400px) {
   .cart__list {
     display: flex;
     flex-direction: column;
     align-items: center;
+    min-width: 100%;
   }
 }
 .cart__item {
@@ -599,6 +597,7 @@ table {
 }
 .footer__top-subscription {
   margin: 150px 0 0 0;
+  white-space: nowrap;
 }
 @media (max-width: 1400px) {
   .footer__top-subscription {
@@ -630,7 +629,7 @@ table {
 }
 .footer__top-input {
   min-height: 50px;
-  width: 256px;
+  max-width: 256px;
   background-color: #e1e1e1;
   color: #222224;
   border: none;
@@ -645,7 +644,7 @@ table {
 .footer__top-button {
   margin: 32px 0 0 0;
   min-height: 50px;
-  width: 100px;
+  max-width: 100px;
   background-color: #f16d7f;
   color: #ffffff;
   border: none;
