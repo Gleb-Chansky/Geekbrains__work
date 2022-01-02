@@ -1,0 +1,88 @@
+.product {
+    &__title { 
+        @include font(24px, 29px);
+        @include uppercase;
+        color: #f16d7f;
+        padding: 60px 0 60px 0;
+        background-color:#f8f3f4;
+
+        @include mobile {
+            text-align: center;
+            padding: 24px 0 0 0; 
+        }
+    }
+
+    &__title-wrp {
+        display: flex;
+        justify-content: space-between;
+        
+        @include mobile {
+            flex-direction: column;
+        }
+    }
+
+    &__sub-title {
+        @include font(14px, 17px, 300);
+        color: #636363;
+
+        @include mobile {
+            margin: 32px 0 46px 0;
+        }
+    }
+
+    &__choise {
+        margin: -65px 0 129px 0;
+
+        @include tablet {
+            margin: 0 0 129px 0;
+        }
+    }
+
+    &__choise-sub-title {
+        @include font(14px, 16px, 300);
+        @include uppercase;
+        margin: 65px 0 0 0;
+        color: #f16d7f;
+    }
+
+    &__choise-sub-title::after {
+        content: '';
+        width: 63px;
+        height: 3px;
+        color: #ef5b70;
+        left: 2px;
+    }
+
+    &__choise-title {
+        @include font(18px, 22px, 300);
+        @include uppercase;
+        color: #4d4d4d;
+        margin: 12px 0 0 0;
+    }
+
+    &__choise-text {
+        @include font(14px, 17px, 300);
+        color:#5e5e5e;
+        margin: 48px 0 0 0;
+
+        @include mobile {
+            @include font (14px, 20px, 300);
+            margin: 32px 0 0 0;
+        }
+    }
+
+    &__choise-price {
+        @include font(24px, 29px, 300);
+        color: #ef5b70;
+        margin: 32px 0 0 0;
+    }
+
+    &__choise-wrp {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    &__choise-button {
+
+    }
+}

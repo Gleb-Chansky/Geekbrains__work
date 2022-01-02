@@ -48,6 +48,11 @@ input:hover {
   font-weight: 700;
 }
 
+.fas-slider {
+  color: #222222;
+  font-size: 50px;
+}
+
 @media (max-width: 1480px) {
   .container {
     width: 92%;
@@ -1251,4 +1256,126 @@ table {
   font-weight: 700;
   font-style: normal;
   color: #f1808f;
+}
+
+.product__title {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 400;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #f16d7f;
+  padding: 60px 0 60px 0;
+  background-color: #f8f3f4;
+}
+@media (max-width: 767px) {
+  .product__title {
+    text-align: center;
+    padding: 24px 0 0 0;
+  }
+}
+.product__title-wrp {
+  display: flex;
+  justify-content: space-between;
+}
+@media (max-width: 767px) {
+  .product__title-wrp {
+    flex-direction: column;
+  }
+}
+.product__sub-title {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  font-style: normal;
+  color: #636363;
+}
+@media (max-width: 767px) {
+  .product__sub-title {
+    margin: 32px 0 46px 0;
+  }
+}
+.product__choise {
+  margin: -65px 0 129px 0;
+}
+@media (max-width: 1480px) {
+  .product__choise {
+    margin: 0 0 129px 0;
+  }
+}
+.product__choise-sub-title {
+  font-size: 14px;
+  line-height: 16px;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: uppercase;
+  margin: 65px 0 0 0;
+  color: #f16d7f;
+}
+.product__choise-sub-title::after {
+  content: "";
+  width: 63px;
+  height: 3px;
+  color: #ef5b70;
+  left: 2px;
+}
+.product__choise-title {
+  font-size: 18px;
+  line-height: 22px;
+  font-weight: 300;
+  font-style: normal;
+  text-transform: uppercase;
+  color: #4d4d4d;
+  margin: 12px 0 0 0;
+}
+.product__choise-text {
+  font-size: 14px;
+  line-height: 17px;
+  font-weight: 300;
+  font-style: normal;
+  color: #5e5e5e;
+  margin: 48px 0 0 0;
+}
+@media (max-width: 767px) {
+  .product__choise-text {
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 300;
+    font-style: normal;
+    margin: 32px 0 0 0;
+  }
+}
+.product__choise-price {
+  font-size: 24px;
+  line-height: 29px;
+  font-weight: 300;
+  font-style: normal;
+  color: #ef5b70;
+  margin: 32px 0 0 0;
+}
+.product__choise-wrp {
+  display: flex;
+  justify-content: space-between;
+}
+.carousel {
+  background-color: #f7f7f7;
+}
+
+.carousel-item img {
+  width: auto;
+  height: 777px;
+  max-height: 777px;
+  margin: auto;
+}
+@media (max-width: 1480px) {
+  .carousel-item img {
+    height: 466px;
+    max-height: 466px;
+  }
+}
+@media (max-width: 767px) {
+  .carousel-item img {
+    height: 374px;
+    max-height: 374px;
+  }
 }/*# sourceMappingURL=style.css.map */
