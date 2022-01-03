@@ -18,6 +18,7 @@
 
         @include tablet {
             flex-direction: column;
+            align-items: center;
             margin: 59px 0 0 0;
         }
     }
@@ -30,14 +31,13 @@
             align-items: center;
             min-width: 100%;
         }
-
     }
     
     &__item {
         position: relative;
         display: flex;
         height: 306px;
-        width: 100%;
+        width: 652px;
         margin: 0 0 40px 0;
         -webkit-box-shadow: 20px 20px 16px 2px rgba(34, 60, 80, 0.2);
         -moz-box-shadow: 20px 20px 16px 2px rgba(34, 60, 80, 0.2);
@@ -151,23 +151,26 @@
     
     &__wrapper{
         margin: 17px 0 0 0;
+        width: 360px;
 
         @include tablet {
             display: flex;
-            justify-content: center;
+            justify-content: space-between;
             margin: 0 0 128px 0;
+            width: 735px;
         }
 
         @include mobile {
             flex-direction: column;
             align-items: center;
             margin: 0 0 96px 0;
+            width: 360px;
         }
     }
 
     &__adress {
         margin:0 0 57px 0;
-        max-width: 360px;
+        width: 100%;
 
         @include tablet {
             margin: 0 15px 0 0;
@@ -189,8 +192,9 @@
     &__adress-input {
         @include font(13px, 15px, 300);
         min-height: 44px;
-        width: 100%;
+        width: 360px;
         margin: 0 0 20px 0;
+        border: 2px solid;
     }
     
     &__adress-button {
