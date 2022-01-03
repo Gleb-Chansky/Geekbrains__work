@@ -3,10 +3,6 @@
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
-
-        @include tablet{
-            justify-content: center;
-        }
     }
 
     &__title {

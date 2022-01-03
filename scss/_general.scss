@@ -39,13 +39,18 @@ input:hover {
 }
 
 .container {
-    width: 78%;
-    margin:0 auto;
+    width: 78% !important;
+    margin: 0 auto;
 }
 
 .pink-text {
     color: $pink-text;
     font-weight: 700;
+}
+
+.fas-slider {
+    color: $black;
+    font-size: 50px;
 }
 
 @media (max-width:$tablet-width) {
