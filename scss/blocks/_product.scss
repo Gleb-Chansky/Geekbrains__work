@@ -50,6 +50,8 @@
 
     &__choise-inner {
         max-width: 555px;
+        z-index: 1;
+        background-color: white;
 
         @include mobile {
             max-width: 326px
@@ -151,6 +153,8 @@
         left: 15px;
         top: 12px;
     }
+
+
 
     &__proposition {
         display: flex;
@@ -256,10 +260,10 @@
         top: 12px;
     }
 
-    &__item-button:hover{
+    &__item-button:hover {
         background-color: #c2b6b6;
     }
-    
+
     &__item-title {
         margin:25px 0 12px 0;
         text-transform: uppercase;

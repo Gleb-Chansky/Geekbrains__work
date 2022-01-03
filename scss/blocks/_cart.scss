@@ -253,11 +253,13 @@
         color: white;
         border: none;
         margin: 0 43px 42px 44px;
+        transition: all 500ms;
     }
     
     &__price-button:hover {
         background-color: white;
         color: #f16d7f;
         border: 1px solid #f16d7f;
+        rotate: 60deg;
     }
 }

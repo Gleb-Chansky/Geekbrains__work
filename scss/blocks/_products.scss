@@ -130,6 +130,7 @@
         color: $pink-text;
         margin: 48px 0 95px 0;
         background-color: transparent;
+        transition: all 900ms;
 
         @include tablet{
             margin: 33px 0 65px 0;
@@ -143,5 +144,6 @@
     &__button:hover {
         background-color: #f16d7f;
         color: $white-text;
+        border-radius: 20px;
     }
 }

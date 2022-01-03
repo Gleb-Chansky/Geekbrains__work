@@ -1,5 +1,21 @@
 .header {
     background-color: $black;
+    position: relative;
+
+    &__menu {
+        display: none;
+        position: absolute;
+        right: 0;
+        z-index: 1;
+        background-color: #ffffff;
+    }
+
+    &__menu-title {
+        @include font(14px, 17px, 700);
+        @include uppercase;
+        color: black;
+        margin: 37px 0 24px 34px;
+    }
 
     &__wrp {
         display: flex;
@@ -14,7 +30,6 @@
     
     &__nav-group {
         @include flex-center;
-        position: relative;
     }
     
     &__button {
@@ -59,10 +74,6 @@
         }
     }
     
-    &__menu {
-        position: absolute;
-    }
-    
     &__menu-button:active + .header__menu {
         display: block;
     }
@@ -97,10 +108,6 @@
     
     &__link:active {
         fill: white;
-    }
-    
-    &__menu {
-        display:none;
     }
 
     &__link-padding {
