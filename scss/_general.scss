@@ -55,7 +55,7 @@ input:hover {
 
 @media (max-width:$tablet-width) {
     .container{
-        width: 92%;
+        width: 92% !important;
     }
 }
 
