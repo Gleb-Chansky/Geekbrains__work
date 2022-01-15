@@ -145,130 +145,194 @@
         </div>
     </header>
     <main>
-        <section class="product__title">
-            <div class="product__title-wrp container">
+        <section class="catalog__title">
+            <div class="catalog__title-wrp container">
                 <h1>new arrivals</h1>
-                <nav><h3 class="product__sub-title">home / men / <span class="pink-text">new arrivals</span></h3></nav>
+                <nav><h3 class="catalog__sub-title">home / men / <span class="pink-text">new arrivals</span></h3></nav>
             </div>
         </section>
-        <section id="carouselExampleIndicators" class="carousel slide" data-bs-ride="carousel">
-            <h3 class="visually-hidden">Carousel</h3>
-            <div class="carousel-inner col-lg-12 container">
-                <div class="carousel-item active ">
-                    <img src="img/product-carousel.png" class="d-block image" alt="product">
+        <section class="catalog__choise container">
+            <h3 class="visually-hidden">Choise of product</h3>
+            <div class="catalog__choise-wrp">
+                <button class="catalog__choise-button" type="button">filter</button>
+                <button class="catalog__choise-button-mobile" type="button"><img class="catalog__choise-img" src="img/filter.svg" alt="filter"></button>
+            <div class="catalog__choise-inner">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        TRAIDING NOW
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">Red</a></li>
+                        <li><a class="dropdown-item" href="#">Green</a></li>
+                        <li><a class="dropdown-item" href="#">Blue</a></li>
+                    </ul>
                 </div>
-                <div class="carousel-item">
-                    <img src="img/product-carousel.png" class="d-block image" alt="product">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        SIZE
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">S</a></li>
+                        <li><a class="dropdown-item" href="#">M</a></li>
+                        <li><a class="dropdown-item" href="#">L</a></li>
+                    </ul>
                 </div>
-                <div class="carousel-item">
-                    <img src="img/product-carousel.png" class="d-block image" alt="product">
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3"
+                        data-bs-toggle="dropdown" aria-expanded="false">
+                        PRICE
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                        <li><a class="dropdown-item" href="#">100$</a></li>
+                        <li><a class="dropdown-item" href="#">200$</a></li>
+                        <li><a class="dropdown-item" href="#">300$</a></li>
+                    </ul>
                 </div>
             </div>
-            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="prev">
-                <i class="fas fa-arrow-circle-left fas-slider"></i>
-                <span class="visually-hidden">Previous</span>
-            </button>
-            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
-                data-bs-slide="next">
-                <i class="fas fa-arrow-circle-right fas-slider"></i>
-                <span class="visually-hidden">Next</span>
-            </button>
-        </section>
-        <section class="product__choise container">
-            <div class="product__choise-inner">
-                <h3 class="product__choise-sub-title">women collection</h3>
-                <h2 class="product__choise-title">moschino cheap and chic</h2>
-                <p class="product__choise-text">Compellingly actualize fully researched processes before proactive
-                    outsourcing. Progressively syndicate collaborative architectures before cutting-edge services.
-                    Completely visualize parallel core competencies rather than exceptional portals.</p>
-                <h2 class="product__choise-price">$561</h2>
-                <div class="product__choise-wrp">
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton1"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            CHOOSE COLOR
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">Red</a></li>
-                            <li><a class="dropdown-item" href="#">Green</a></li>
-                            <li><a class="dropdown-item" href="#">Blue</a></li>
-                        </ul>
-                    </div>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            CHOOSE SIZE
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">S</a></li>
-                            <li><a class="dropdown-item" href="#">M</a></li>
-                            <li><a class="dropdown-item" href="#">L</a></li>
-                        </ul>
-                    </div>
-                    <div class="dropdown">
-                        <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton3"
-                            data-bs-toggle="dropdown" aria-expanded="false">
-                            QUANITY
-                        </button>
-                        <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
-                            <li><a class="dropdown-item" href="#">1</a></li>
-                            <li><a class="dropdown-item" href="#">5</a></li>
-                            <li><a class="dropdown-item" href="#">10</a></li>
-                        </ul>
-                    </div>
-                </div>
-                <form action="#">
-                    <button class="product__choise-button" type="submit">Add to Cart</button>
-                </form>
             </div>
         </section>
-        <section class="product container">
-            <ul class="product__list">
-                <li class="product__item">
-                    <div class="product__item-overlay">
-                        <img class="product__item-img" src="img/product-4.png" alt="product-4" width="360" height="420">
-                        <div class="product__item-wrp">
-                            <form action="#">
-                                <button class="product__item-button" type="button">Add to Cart</button>
-                            </form>
-                        </div>
+        <ul class="catalog__list container">
+            <li class="products__item">
+                <div class="products__item-overlay">
+                    <img class="products__item-img" src="img/product-1.png" alt="product-1" width="360" height="420">
+                    <div class="products__item-wrp">
+                        <form action="#">
+                            <button class="products__item-button" type="button">Add to Cart</button>
+                        </form>
                     </div>
-                    <h3 class="product__item-title">ellery x m'o capsule</h3>
-                    <p class="product__item-text">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <a class="product__item-link" href="#">$52.00</a>
-                </li>
-                <li class="product__item">
-                    <div class="product__item-overlay">
-                        <img class="product__item-img" src="img/product-3.png" alt="product-3" width="360" height="420">
-                        <div class="product__item-wrp">
-                            <form action="#">
-                                <button class="product__item-button" type="button">Add to Cart</button>
-                            </form>
-                        </div>
+                </div>
+                <h3 class="products__item-title">ellery x m'o capsule</h3>
+                <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian
+                    arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <a class="products__item-link" href="#">$52.00</a>
+            </li>
+            <li class="products__item">
+                <div class="products__item-overlay">
+                    <img class="products__item-img" src="img/product-7.png" alt="product-2" width="360" height="420">
+                    <div class="products__item-wrp">
+                        <form action="#">
+                            <button class="products__item-button" type="button">Add to Cart</button>
+                        </form>
                     </div>
-                    <h3 class="product__item-title">ellery x m'o capsule</h3>
-                    <p class="product__item-text">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <a class="product__item-link" href="#">$52.00</a>
-                </li>
-                <li class="products__item" style="margin: 30px 0 0 0;">
-                    <div class="products__item-overlay">
-                        <img class="products__item-img" src="img/product-6.png" alt="product-6" width="360" height="420">
-                        <div class="products__item-wrp">
-                            <form action="#">
-                                <button class="products__item-button" type="button">Add to Cart</button>
-                            </form>
-                        </div>
+                </div>
+                <h3 class="products__item-title">ellery x m'o capsule</h3>
+                <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian
+                    arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <a class="products__item-link" href="#">$52.00</a>
+            </li>
+            <li class="products__item">
+                <div class="products__item-overlay">
+                    <img class="products__item-img" src="img/product-3.png" alt="product-3" width="360" height="420">
+                    <div class="products__item-wrp">
+                        <form action="#">
+                            <button class="products__item-button" type="button">Add to Cart</button>
+                        </form>
                     </div>
-                    <h3 class="products__item-title">ellery x m'o capsule</h3>
-                    <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian
-                        arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
-                    <a class="products__item-link" href="#">$52.00</a>
-                </li>
+                </div>
+                <h3 class="products__item-title">ellery x m'o capsule</h3>
+                <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian
+                    arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <a class="products__item-link" href="#">$52.00</a>
+            </li>
+            <li class="products__item">
+                <div class="products__item-overlay">
+                    <img class="products__item-img" src="img/product-4.png" alt="product-4" width="360" height="420">
+                    <div class="products__item-wrp">
+                        <form action="#">
+                            <button class="products__item-button" type="button">Add to Cart</button>
+                        </form>
+                    </div>
+                </div>
+                <h3 class="products__item-title">ellery x m'o capsule</h3>
+                <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian
+                    arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <a class="products__item-link" href="#">$52.00</a>
+            </li>
+            <li class="products__item">
+                <div class="products__item-overlay">
+                    <img class="products__item-img" src="img/product-8.png" alt="product-5" width="360" height="420">
+                    <div class="products__item-wrp">
+                        <form action="#">
+                            <button class="products__item-button" type="button">Add to Cart</button>
+                        </form>
+                    </div>
+                </div>
+                <h3 class="products__item-title">ellery x m'o capsule</h3>
+                <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian
+                    arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <a class="products__item-link" href="#">$52.00</a>
+            </li>
+            <li class="products__item">
+                <div class="products__item-overlay">
+                    <img class="products__item-img" src="img/product-9.png" alt="product-6" width="360" height="420">
+                    <div class="products__item-wrp">
+                        <form action="#">
+                            <button class="products__item-button" type="button">Add to Cart</button>
+                        </form>
+                    </div>
+                </div>
+                <h3 class="products__item-title">ellery x m'o capsule</h3>
+                <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian
+                    arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <a class="products__item-link" href="#">$52.00</a>
+            </li>
+            <li class="products__item">
+                <div class="products__item-overlay">
+                    <img class="products__item-img" src="img/product-10.png" alt="product-5" width="360" height="420">
+                    <div class="products__item-wrp">
+                        <form action="#">
+                            <button class="products__item-button" type="button">Add to Cart</button>
+                        </form>
+                    </div>
+                </div>
+                <h3 class="products__item-title">ellery x m'o capsule</h3>
+                <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian
+                    arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <a class="products__item-link" href="#">$52.00</a>
+            </li>
+            <li class="products__item">
+                <div class="products__item-overlay">
+                    <img class="products__item-img" src="img/product-11.png" alt="product-5" width="360" height="420">
+                    <div class="products__item-wrp">
+                        <form action="#">
+                            <button class="products__item-button" type="button">Add to Cart</button>
+                        </form>
+                    </div>
+                </div>
+                <h3 class="products__item-title">ellery x m'o capsule</h3>
+                <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian
+                    arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <a class="products__item-link" href="#">$52.00</a>
+            </li>
+            <li class="products__item">
+                <div class="products__item-overlay">
+                    <img class="products__item-img" src="img/product-12.png" alt="product-5" width="360" height="420">
+                    <div class="products__item-wrp">
+                        <form action="#">
+                            <button class="products__item-button" type="button">Add to Cart</button>
+                        </form>
+                    </div>
+                </div>
+                <h3 class="products__item-title">ellery x m'o capsule</h3>
+                <p class="products__item-text">Known for her sculptural takes on traditional tailoring, Australian
+                    arbiter of cool Kym Ellery teams up with Moda Operandi.</p>
+                <a class="products__item-link" href="#">$52.00</a>
+            </li>
+        </ul>
+        <nav class="catalog__navigation">
+            <ul class="catalog__navigation-list">
+                <li><a class="catalog__navigation-item" href="#">1</a></li>
+                <li><a class="catalog__navigation-item" href="#">2</a></li>
+                <li><a class="catalog__navigation-item" href="#">3</a></li>
+                <li><a class="catalog__navigation-item" href="#">4</a></li>
+                <li><a class="catalog__navigation-item" href="#">5</a></li>
+                <li><a class="catalog__navigation-item" href="#">6</a></li>
+                <li><a class="catalog__navigation-item" href="#">..</a></li>
+                <li><a class="catalog__navigation-item" href="#">20</a></li>
             </ul>
-        </section>
+        </nav>
     </main>
     <footer class="footer ">
         <section class="footer__top container">
