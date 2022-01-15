@@ -65,6 +65,11 @@
         border: none;
         padding: 17px 66px 17px 30px;
         position: relative;
+        transition: all 900ms;
+    }
+
+    &__input-button:hover {
+        border-radius: 20px;
     }
     
     &__input-button::after {
